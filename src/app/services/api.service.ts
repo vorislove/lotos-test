@@ -1,11 +1,12 @@
 import axios from 'axios';
+import { API_URL } from '../../config';
 import { IUser, Time } from '../types/types';
 
 export class ApiService {
 	static instance: ApiService;
 	private http = axios.create({
 		responseType: 'json',
-		baseURL: process.env.REACT_PUBLIC_API_URL
+		baseURL: API_URL
 	});
 
 	constructor() {
