@@ -5,6 +5,7 @@ import { changeMove } from '../store/slice/usersSlice';
 import { subtractTime } from '../store/slice/timerSlice';
 import Icon from './ui/Icon';
 import Loader from './ui/Loader/Loader';
+import './Timer.css';
 
 export const Timer: FC = () => {
 	const min = useAppSelector((state) => state.timer.m);
@@ -36,7 +37,9 @@ export const Timer: FC = () => {
 						(min && min < 10) || min == 0 ? `0${min}` : min
 					} : ${(sec && sec < 10) || sec == 0 ? `0${sec}` : sec}`}</div>
 					<div className="ms-3">
-						<Icon name="hourglass" />
+						<div className="watch">
+							<Icon name="hourglass" />
+						</div>
 					</div>
 				</>
 			)}

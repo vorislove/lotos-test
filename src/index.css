@@ -17,3 +17,8 @@ td {
 :root {
 	--base-primary: rgba(100, 100, 244, 1);
 }
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
