@@ -5,7 +5,7 @@
 	padding: 5px 0;
 	--icon-color: var(--base-primary);
 
-	& :global(.icon) {
+	& .loader {
 		animation: 1s loader linear infinite;
 	}
 }

@@ -9,7 +9,9 @@ interface ILoader {
 const Loader: FC<ILoader> = ({ message = '' }) => {
 	return (
 		<div className="wrapper">
-			<Icon name="loader" />
+			<div className="loader">
+				<Icon name="loader" />
+			</div>
 			{message ? <span className="message">{message}</span> : null}
 		</div>
 	);
