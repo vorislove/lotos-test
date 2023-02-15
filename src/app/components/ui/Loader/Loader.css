@@ -4,10 +4,10 @@
 	gap: 6px;
 	padding: 5px 0;
 	--icon-color: var(--base-primary);
+}
 
-	& .loader {
-		animation: 1s loader linear infinite;
-	}
+.loader {
+	animation: 1s loader linear infinite;
 }
 
 .message {
